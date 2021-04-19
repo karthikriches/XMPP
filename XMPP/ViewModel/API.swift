@@ -20,8 +20,9 @@ class API {
         let key =  "e35a5afb2a05e93dcb1ae3d82363bd3d"
         let latitude = 55.5
         let longitude =  37.5
+        let host = "http://api.openweathermap.org"
         
-        let  url = URL(string: "http://api.openweathermap.org/data/2.5/find?lat=\(latitude)&lon=\(longitude)&cnt=10&appid=\(key)")
+        let  url = URL(string: "\(host)/data/2.5/find?lat=\(latitude)&lon=\(longitude)&cnt=10&appid=\(key)")
         
         guard let api = url else {
             return
