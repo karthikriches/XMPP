@@ -13,6 +13,7 @@
 		2501965B262D92F70095AB0A /* CityWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501965A262D92F70095AB0A /* CityWeatherViewController.swift */; };
 		2501965E262D99D00095AB0A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501965D262D99D00095AB0A /* API.swift */; };
 		254866E9262C48E000BE1777 /* XMPPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254866E8262C48E000BE1777 /* XMPPController.swift */; };
+		25A0D7BB262DB2B4002C7020 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0D7BA262DB2B4002C7020 /* DBManager.swift */; };
 		25DB93B7262C46AF003DA0DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB93B6262C46AF003DA0DF /* AppDelegate.swift */; };
 		25DB93B9262C46AF003DA0DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB93B8262C46AF003DA0DF /* SceneDelegate.swift */; };
 		25DB93BB262C46AF003DA0DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB93BA262C46AF003DA0DF /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		2501965A262D92F70095AB0A /* CityWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherViewController.swift; sourceTree = "<group>"; };
 		2501965D262D99D00095AB0A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		254866E8262C48E000BE1777 /* XMPPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPController.swift; sourceTree = "<group>"; };
+		25A0D7BA262DB2B4002C7020 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		25DB93B3262C46AF003DA0DF /* XMPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DB93B6262C46AF003DA0DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25DB93B8262C46AF003DA0DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				2501965D262D99D00095AB0A /* API.swift */,
+				25A0D7BA262DB2B4002C7020 /* DBManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				2501965B262D92F70095AB0A /* CityWeatherViewController.swift in Sources */,
 				25DB93BB262C46AF003DA0DF /* ViewController.swift in Sources */,
 				25DB93B7262C46AF003DA0DF /* AppDelegate.swift in Sources */,
+				25A0D7BB262DB2B4002C7020 /* DBManager.swift in Sources */,
 				25DB93C1262C46AF003DA0DF /* XMPP.xcdatamodeld in Sources */,
 				25DB93B9262C46AF003DA0DF /* SceneDelegate.swift in Sources */,
 				2501965E262D99D00095AB0A /* API.swift in Sources */,

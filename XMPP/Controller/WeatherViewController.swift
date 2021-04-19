@@ -11,8 +11,7 @@ class WeatherViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var city   = [String]()
-    var   weather : [Weather]?
+    var weather : [Weather]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,6 @@ class WeatherViewController: UIViewController {
         
         API.shared.loadWeather {
             data in
-            self.city.append(contentsOf: data.map{$0.name})
             self.weather=data
             DispatchQueue.main.async {
               self.tableView.reloadData()
@@ -38,7 +36,7 @@ class WeatherViewController: UIViewController {
 
 extension  WeatherViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return city.count
+        return weather?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +44,7 @@ extension  WeatherViewController : UITableViewDelegate, UITableViewDataSource {
         guard  let weather = weather else {
             return cell!
         }
-        cell?.textLabel?.text  = "\(indexPath.row+1) . " + city[indexPath.row] + " - "+String(weather[indexPath.row].main.temp)
+        cell?.textLabel?.text  = "\(indexPath.row+1) . " + weather[indexPath.row].name + " - "+String(weather[indexPath.row].main.temp)
         return cell!
     }
     

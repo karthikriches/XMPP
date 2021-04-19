@@ -22,9 +22,11 @@ class API {
         let longitude =  37.5
         
         let  url = URL(string: "http://api.openweathermap.org/data/2.5/find?lat=\(latitude)&lon=\(longitude)&cnt=10&appid=\(key)")
+        
         guard let api = url else {
             return
         }
+        
         URLSession.shared.dataTask(with: api) {
             data,response,error in
             if let error = error  {
@@ -33,12 +35,12 @@ class API {
             guard  let data = data else  {
                 return
             }
+            
             do {
                let temp =  try   JSONDecoder().decode(Root.self, from: data)
                completion(temp.list)
-                
-                
-            } catch {
+            }
+            catch {
                 print(error.localizedDescription)
             }
             

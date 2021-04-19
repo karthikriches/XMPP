@@ -23,6 +23,7 @@ class CityWeatherViewController: UIViewController {
     @IBOutlet weak var maxTemp: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         guard  let weather =  weather else {
             return
         }
